@@ -1,0 +1,24 @@
+using System;
+public class Program
+	{
+	public static void Main(string[] args)
+	{
+	string name = "Joseph";
+		int myNum;
+		myNum = 15;
+		int x = 5;
+		int y = 10;
+		myNum--;
+	int sum = 100 + 50;
+	Console.WriteLine(x =+ y);
+	Console.WriteLine(y > myNum);
+	Console.WriteLine(name + " come forward");
+	Console.WriteLine(myNum);
+	Console.WriteLine(sum);
+	}
+	// I tried to spread the knowlage, I focused on the functions of the operators and variables.
+	// most of what I did is self explanitory like how the = function alows to set up integers.
+	// if you put string somethingrandom then the string that you made is somethingrandom. So I set somethingrandom = "Joseph"
+	// when you have a string but you want to have your program say more things you put your string name and use the + operator.
+	// it works because you want to add more words to the WriteLine.
+	}
