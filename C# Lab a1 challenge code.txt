@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	    string name = "Hello there G Welcome to the magic calculator here is an example!";
+		float myNum = 50f;
+		int x = 20;
+		bool mybool = true;
+		Console.WriteLine(name);
+		Console.WriteLine("20 + 50 =");
+		Console.WriteLine(myNum + x);
+	}
+}
+
+// 1. Create a program that declares and initializes variables of different data types such as integer, floating-point, boolean, and string. Assign meaningful values
+//    to these variables and display their values on the console.
+
+// 2. Extend your program to include variable manipulation. Perform arithmetic operations (addition, subtraction, multiplication, and division) on variables of
+//    numeric types. Display the results of these operations on the console.
+
+// 3. Enhance your program to include user input. Prompt the user to enter values for variables and use those values in your calculations or display them on the console.
