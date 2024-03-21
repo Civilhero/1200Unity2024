@@ -1,0 +1,66 @@
+// Challenge 1
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Welcome to the thermometer!");
+		Console.WriteLine("Please use Celsius");
+		int temp = Convert.ToInt32(Console.ReadLine());
+		
+		if  (temp >= 30) {
+		Console.WriteLine("The Weather out side is hot as an oven! Drink Some Water and stay in the shade!");
+		}	
+		else if (temp <= 10) {
+		Console.WriteLine("The Weather outside is colder than ice!!!");
+		}
+		else {
+		Console.WriteLine("the weather is nice! go and enjoy!");
+		}
+	}
+}
+// I was able to get the user response with a convert node and a read line as well. Read line alows the person to put in a response acording to the type of variable it is assigned to.
+// if else statements work by using a condition and {} marks to set the conditional boundaries. 
+// the ToInt32 alows the program to use numbers instead of letters hence why we have an Int varable.
+// the value that is being checked is the temp value, and its set as an int variable
+
+
+// Challenge 2
+using System;
+					
+public class Program
+{
+	public static void Main()
+    {
+
+    	Console.WriteLine("Welcome to the grading module!");
+	Console.WriteLine("I see that you have an exam that needs to be put in the system");
+	Console.WriteLine("What Was the Score?");
+	int Score = Convert.ToInt32(Console.ReadLine());
+
+	if (Score >= 90) {
+	Console.WriteLine("Congrats! you've earned yourself an A!");
+	}
+	else if (Score <= 89 && Score >= 80) {
+	Console.WriteLine("Well done you got a B.");
+	}
+	else if (Score <= 79 && Score >= 71) {
+    	Console.WriteLine("Ok, you got a C.");
+	}
+	else if (Score <= 70 && Score >= 60) {
+	Console.WriteLine("yikes, thats a D.");
+	}
+    	else if (Score < 59 && Score >= 0) {
+	Console.WriteLine("Oh no! you got an F!");
+	}
+	else {	
+	Console.WriteLine("that doesn't work ya silly bill");
+	}
+    	Console.WriteLine("See you next time!");
+    }
+}
+// I learned that if you dont set up a range for each check of the else if statements. Then your value wont go through any of the other checks,
+// hence why we need to use the && operator to make a range for the types of checks.
+// also if you try to use a negative number, then the program will say no because I set up a range of 0 to infinity.
+// else if statements go through the loop as if it were a bunch of check points.  
