@@ -1,0 +1,98 @@
+// Challenge 1
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Welcome to the thermometer!");
+		Console.WriteLine("What is the temprature outside?");
+		Console.WriteLine("Please use Celsius");
+		int temp = Convert.ToInt32(Console.ReadLine());
+		
+		if  (temp >= 30) {
+		Console.WriteLine("The Weather out side is hot as an oven! Drink Some Water and stay in the shade!");
+		}	
+		else if (temp >= 10 && temp <= 20){
+		Console.WriteLine("I would wear a jacket if I were you!");
+		}
+		else if (temp < 10){
+		Console.WriteLine("Its colder than dry ice out there! get to the fireplace and drink some hot chocolate!");	
+		}
+		else {
+		Console.WriteLine("the weather is nice! go and enjoy!");
+		}
+	}
+}
+// wow this was easy, I just used the same knowlage with the grading moduel to this one.
+// it would be a repeat if I told you what I did.
+
+
+// Challenge 2
+using System;
+					
+public class Program
+{
+	public static void Main()
+    {
+
+    Console.WriteLine("Welcome to the grading module!");
+	Console.WriteLine("I see that you have an exam that needs to be put in the system");
+	Console.WriteLine("What Was the Score?");
+	int Score = Convert.ToInt32(Console.ReadLine());
+
+	if (Score >= 90) {
+	Console.WriteLine("Congrats! you've earned yourself an A!");
+	}
+	else if (Score <= 89 && Score >= 80) {
+	Console.WriteLine("Well done you got a B.");
+	}
+	else if (Score <= 79 && Score >= 71) {
+    	Console.WriteLine("Ok, you got a C.");
+	}
+	else if (Score <= 70 && Score >= 60) {
+	Console.WriteLine("yikes, thats a D.");
+	}
+    	else if (Score < 59 && Score >= 0) {
+	Console.WriteLine("Oh no! you got an F!");
+	}
+	else {	
+	Console.WriteLine("that doesn't work ya silly bill");
+	}
+	
+	Console.WriteLine("ok now tell me what was the subject of this exam?");
+	Console.WriteLine("before you type, remember! dont put in multiple subjects, just submit one");
+	Console.WriteLine("no capitol letters and no Abbreviations like CS, ENGL, MTH, SCI, ENGINE, or HEAL");
+	string sub = Console.ReadLine();
+	
+	switch (sub){
+		case "math":
+		Console.WriteLine("I would study complex math functions and algebraic functions you know the ones that have letters in them!!!, even if you did good or bad");
+		break;
+		case "science":
+		Console.WriteLine("Study the Scientific method, learn more about the cell functions other than the mitochondria (why does everyone know this?), even if you did good or bad");
+		break;
+		case "engineering":
+		Console.WriteLine("Hopefully you took some math because engineering has trigonometry! there are many types of engineering so choose carefully! even if you did good or bad");
+		break;
+		case "english":
+		Console.WriteLine("I hope you check your grammer, now did I stammer? work on that grammer! even though you might have done good or bad");
+		break;
+		case "health":
+		Console.WriteLine("I wish you luck on the long and financially stammering journey if you are in medical school or the short hall of teaching basic health, even if you did good or bad");
+		break;
+		case "computer science":
+		Console.WriteLine("Be sure to remember and check your syntaxes, operations, variables, and functions real close! I would also pick a good programing language that is easy to learn!");
+		break;
+		default:
+		Console.WriteLine("I don't know that one, but I wish you the best in pursuing that dream!");
+		break;
+	}	
+    Console.WriteLine("See you next time!");
+    }
+}
+// this is the same knowlage that I used for the 1a challenge where I used a switch statement to have the user put in a specific subject.
+// I wanted to give a hint to the user what they should put in if they know how to spell it.
+// If they did a wrong input, a correct subject that isn't on the list, or just skips the program intirely then they get the default message.
+// the default function acts like the default senario if you didn't do any of the special cases correctly.
+// example if you misspelled math as (moth) then the program will check the cases that it will fall under. since it didn't hit any of them then it goes into the default senario  
