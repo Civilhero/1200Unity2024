@@ -1,0 +1,30 @@
+using System;					
+public class Program
+{
+	public static void Main()
+	{
+            Console.WriteLine("Welcome to the number Pyramid builder.");
+		    Console.WriteLine("How big do you want to build this thing?(just put a number in)");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int e = 1; e <= n; e++)
+            {
+                for (int x = e; x <= n; x++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= e; j++)
+                {
+                    Console.Write(e+" ");
+                }
+                Console.WriteLine();
+            }
+		Console.WriteLine("Hope you're happy with your pyramid!");
+	}
+}
+// So we needed 4 integers defined in total. we then convert the number that was inputed from the user through these different integers.
+// We needed to make spaces in our console.writelines to have the full pyramid effect aligning the 1 on the top. when we do the ++ operator, it copies the number that was inputed.
+// n is what the user is inputing, then e is being checked and added to the variable. we have to set e to 1 in order for the conditions to work
+// the next for loop statement we need to up the number count by using another variable which is x. once the check is done then x gets added uping the number value
+// the last for loop does the j variable and it checks the main variable (e is the main).
+// once the condition reaches the number that the user puts in, the program will be done and the pyramid should be displayed perfectly.
+// for loops are for setting conditions untill the condition has been met. nest loops are the loops inside the loops.
