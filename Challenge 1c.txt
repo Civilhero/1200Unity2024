@@ -1,0 +1,34 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+    Console.WriteLine("Welcome to the guessers table where we think of a number and you try to guess it!");
+	Console.WriteLine("Ok we got a number, now guess what it is from 1 to 10! input numbers or else we will kick you out!!");
+
+
+    Random rnd = new Random();
+		int rando = rnd.Next(1, 10);
+		int x = rando;
+	    int Guess;
+		Guess = 0;
+		int attemps = 0;
+            while (Guess != x)
+            {
+                Guess = Convert.ToInt32(Console.ReadLine());
+    
+                if (Guess < x)
+                {
+                    Console.WriteLine("Nope!! the number is higher than " + Guess + ". Try again!");
+                }
+                else if (Guess > x)
+                {
+                    Console.WriteLine("Nope!! the number is lower than " + Guess + ". Try again!");
+                }
+			 attemps++;
+            }
+
+            Console.WriteLine("Well done! The answer was " + x + " and it only took you " + attemps + " Attemp(s)");
+	}
+}
