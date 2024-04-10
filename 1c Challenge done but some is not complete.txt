@@ -1,0 +1,72 @@
+// Challenge 1 is not completeable
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+    Console.WriteLine("Welcome to the guessers table where we think of a number and you try to guess it!");
+    Console.WriteLine("Ok we got a number, now guess what it is from 1 to 10! input numbers or else we will kick you out!!");
+    Console.WriteLine("We will change the number everytime to mess with you, hahahaha!");
+
+    Random rnd = new Random();
+		int rando = rnd.Next(1, 10);
+		int x = rando;
+	    int Guess;
+		Guess = 0;
+		int attemps = 0;
+            while (Guess != x)
+            {
+                Guess = Convert.ToInt32(Console.ReadLine());
+    
+                if (Guess < x)
+                {
+                    Console.WriteLine("Nope!! the number is higher than " + Guess + ". Try again!");
+                }
+                else if (Guess > x)
+                {
+                    Console.WriteLine("Nope!! the number is lower than " + Guess + ". Try again!");
+                }
+			 attemps++;
+            }
+
+            Console.WriteLine("Well done! The answer was " + x + " and it only took you " + attemps + " Attemp(s)");
+	}
+}
+// IDK if people struggled with this but I cannot figure out why the answer keeps on changing everytime you make a guess.
+// along with the guessing, the attemps are false because of the answer changing every single time you guess.
+// funny thing is that I tried to use AI and it still didn't work and AI is supposed to be the smartest thing on this planet.
+// so this is the best that I can come up with in regards to a number guessing game with the attemps recorded.
+// if someone was able to complete this challenge then I would love to hear their reasoning of why their code works and mine doesn't
+
+// Challenge 2 COMPLETE!!
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("well hello there! this is the food list where we hold in food items");
+		string [] shopping = {"Milk", "Chicken", "Bread", "Tomato", "Carrots", "Bananas", "Lettuce"}; 
+		Console.WriteLine("Here are some examples! ");
+		
+		for (int i = 0; i < shopping.Length; i++){
+	  Console.WriteLine(shopping[i]);
+	}
+		Console.WriteLine("Now get what you want! We will do 3 food items!");
+        string [] list = {"empty1", "empty2", "empty3",};
+        list[0] = (Console.ReadLine());
+        list[1] = (Console.ReadLine());
+        list[2] = (Console.ReadLine());
+		Console.WriteLine("so you like");
+		for (int x = 0; x < list.Length; x++){
+		   Console.WriteLine(list[x]);
+	   }
+		Console.WriteLine("Ok, here they are again so you don't forget! "+ list[0] + ", " + list[1] + ", and " + list[2]);
+		Console.WriteLine("happy shopping!");
+		}
+}
+// I figured out that you need to have existing strings in the array to keep the users input/strings.
+// the users input is needed in order for the empty strings to be replaced. we use the list[0] = console.readline to replace the empty1.
+// for the loops I used a for loop so that when the 3 strings in the array are displayed, the loop will then stop when every string has been displayed.
+// .Length is the value of the string array so that we can numericaly set a condition for said array. for example the list array is 3 and the shopping array is 7
